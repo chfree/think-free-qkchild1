@@ -18,7 +18,7 @@ function render( props = {}) {
     instance = new Vue({
         router,
         render: h => h(App),
-    }).$mount(container ? container.querySelector('#app'): '#app');  // 为了避免根id#app与其他DOM冲突，需要限制查找范围
+    }).$mount(container ? container.querySelector('#authority'): '#authority');  // 为了避免根id#app与其他DOM冲突，需要限制查找范围
 }
 
 if (!window.__POWERED_BY_QIANKUN__) {
