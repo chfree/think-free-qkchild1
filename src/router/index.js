@@ -13,5 +13,6 @@ export default new Router({
     // mode: 'history',			// 重点5
     routes: [
         { path: prefix + '/', redirect: prefix + '/child'},
-        { path: prefix + '/child', component: ()=>import('../components/child')}]
+        { path: prefix + '/child', component: () => import('../components/child') },
+        { path: prefix + '/systemModule/superManage/menu', component: ()=>import('../components/menu')}]
 })
