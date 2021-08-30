@@ -1,6 +1,7 @@
 const { name } = require('./package');
 module.exports = {
     devServer: {
+        host: '127.0.0.1',
         port: 8083,			// 重点6
         headers: {			// 重点7：同重点1，允许子应用跨域
             'Access-Control-Allow-Origin': '*',

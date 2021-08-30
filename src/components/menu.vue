@@ -7,6 +7,9 @@
 <script>
 
 export default {
+  mounted() {
+    console.log('xxxx', window.sessionStorage.token)
+  }
 }
 </script>
 
